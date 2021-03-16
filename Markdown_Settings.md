@@ -46,4 +46,7 @@ El paquete instala un atractivo tema gris sobre gris para los archivos Markdown 
 |Combinación|Descripción|
 |-----------|-----------|
 |**CTRL+1**|Agrega almohadilla para escribir un título (puedes ir desde el 1 al 6)|
+|**CTRL+B**|Te compila el archivo de markdown a html(debes tener el build en automatic)|
+|**CTRL+D**|Selecciona la palabra en el cursor, luego presiona el asterísco(\*) se convierte en italic si le das dos veces se convierte en bold|
+
 
