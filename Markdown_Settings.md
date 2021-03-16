@@ -16,7 +16,7 @@ Si esta utilizando ST2 posiblemente al instalarlo te encuentres con una ventana 
 
 Esto se debe que cuando descargas el package te cargará automaticamente el README.MD del mismo, por lo que de manera inmediata te arrojará este error, por otro lado, para poder evitar este mensaje de error, debemos deshabilitar el paquete nativo manualmente. Para hacer eso, quitamos Markdown de la lista en **"ignored_packages"**:
 
-```json
+```JSON
 // Preferences.sublime-settings -- User
 {
 /*...
