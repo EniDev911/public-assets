@@ -1,0 +1,119 @@
+[
+	{
+		"class": "sidebar_label",
+		"color": [30, 190, 150],
+		"font.face": "Gotham",
+		"font.bold": false,
+		"font.size": 16,
+		"font.italic": true,
+
+	},
+	{
+		"class": "sidebar_label",
+        // Se aplica cuando posicionamos el cursor sobre el archivo
+		"parents": [{"class":"tree_row", "attributes": ["hover"]}],
+		"color": [255,255,255],
+	},
+
+	 // Sidebar heading selected
+    {
+        // Se cambia cuando pasamos sobre un archivo seleccionado
+        "class": "sidebar_heading",
+        "parents": [{"class": "tree_row","attributes": ["selected"]}],
+        "shadow_offset": [255,255,0],
+        
+    },
+
+        // Sidebar entry selected
+    {
+        // Configuración para el archivo seleccionado
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row","attributes": ["selected"]}],
+        "color": [255, 255, 255], 
+        "font.italic":false
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row","attributes": ["selected", "hover"]}],
+        "color": [255, 255, 70],
+  
+    },
+        // Sidebar heading
+    {
+        "class": "sidebar_heading",
+        "color": [95, 99, 108],
+        "shadow_color": [105, 109, 118, 35],
+        "shadow_offset": [0, 0.1],
+        "font.bold": true,
+        "font.italic":false,
+    },
+      // Sidebar container
+    {
+        "class": "sidebar_container",
+        "layer0.texture": "",
+        "layer0.opacity": 10,
+        "layer0.tint": [10, 10, 30],
+        "layer0.inner_margin": [1,4,2,1],
+        "content_margin": [4,10,0,4],
+              "font.italic":false,
+    },
+    // Sidebar tree
+    {
+        "class": "sidebar_tree",
+        "row_padding": [8,4],
+        "indent": 12,
+        "indent_offset": 14,
+        "indent_top_level": false,
+        "dark_content": true,
+         "font.italic":false,
+    },
+    // Sidebar rows
+    {
+        // Color del background del file
+        "class": "tree_row",
+        "layer0.texture": "",
+
+        "layer0.opacity": 0,
+        "layer0.inner_margin": [2,2],
+
+    },
+
+    // Sidebar row selected
+    {
+        "class": "tree_row",
+        "attributes": ["selected"],
+        "layer0.opacity": 100, // Transparencia para el bg seleccionado
+        "layer0.tint": [255, 100, 20], // Color del background
+         "font.italic":false,
+    }
+    ,
+         
+    // Sidebar heading
+    {
+        "class": "sidebar_heading",
+        "color": [250, 140, 0],
+        "shadow_color": [105, 109, 118, 35],
+        "shadow_offset": [0, 0.1],
+        "font.bold": true,
+        "font.italic":false,
+    },
+
+    // Sidebar folder entry
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row","attributes": ["expandable"]}],
+        "color": [255, 115,60],
+        "font.bold":true,
+        "font.italic":false,
+        "font.face": "Gotham",
+
+    },
+ 
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row","attributes": ["expandable"]}],
+        "settings": ["bold_folder_labels"],
+        "font.bold": false
+    },
+
+]
