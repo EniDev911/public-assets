@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.21, for Linux (x86_64)
 --
--- Host: localhost    Database: pruebaplatzi
+-- Host: localhost    Database: 
 -- ------------------------------------------------------
 -- Server version	8.0.21-0ubuntu0.20.04.4
 
