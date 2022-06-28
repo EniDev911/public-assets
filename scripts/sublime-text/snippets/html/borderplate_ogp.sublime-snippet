@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+<!doctype html>
+<html lang="es" prefix="og: https://ogp.me/ns#">
+<head>
+  <!-- Meta properties-->
+  <meta property="og:title" content="${1:og-title}" />
+	<meta property="og:type" content="${2:website}" />
+	<meta property="og:description" content="${3:website description}" />
+	<meta property="og:url" content="${4:og-url}" />
+	<meta property="og:image" content="${5:og-url-image}" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrik-to-fit=no">
+	<title>${1:title}</title>
+</head>	
+<body>
+	<div class="${6:class}">
+	</div>
+</body>
+</html>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>html-og</tabTrigger>
+	<!-- <scope>source.html</scope> -->
+</snippet>
