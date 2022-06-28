@@ -1,0 +1,47 @@
+[
+	{
+		"class":"sidebar_label",
+		"color":[255, 255, 255],
+		"font.face": "Jetbrains Mono",
+		"font.italic":true,
+		"font.size": 12,
+	},
+	{
+        // Configuración para el hover del archivo 
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes":["hover"]}],
+        "color": [255, 250, 120],
+    },
+	{
+        // Configuración para el archivo seleccionado
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row","attributes": ["selected"]}],
+        "color": [255, 255, 0], 
+        "font.italic":false
+    },
+    {
+       // Sidebar row selected
+        "class": "tree_row",
+        "attributes": ["selected"],
+        "layer0.opacity": 0.3, // Transparencia para el bg seleccionado
+        "layer0.tint": [179, 120, 235], // Color del background
+    },
+
+    {
+     // Sidebar background
+        "class": "sidebar_container",
+        "layer0.texture": "",
+        "layer0.opacity": 1,
+        "layer0.tint": [30, 29, 42],
+    },
+    {
+      // Sidebar folder entry
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row","attributes": ["expandable"]}],
+        "color": [250, 240, 180],
+        "font.bold":true,
+        "font.italic":false,
+        "font.size": 13,
+        "font.face": "Jetbrains Mono",
+    },
+]
