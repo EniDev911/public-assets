@@ -20,11 +20,161 @@
         "font.italic":false
     },
     {
+        // Tabs
+        "class": "tab_control",
+
+        "layer0.texture": "",
+        "layer0.inner_margin": [22, 4],
+        "tint_index": 0,        // tint layer 0
+        "tint_modifier": [255, 0, 0, 0],
+        "layer0.tint": [30, 29, 42],
+        "layer0.opacity": 1,
+        "layer1.texture": "",
+        "layer1.inner_margin": [22, 4],
+        "layer1.opacity": 0,
+        "layer2.inner_margin": [22, 4],
+        "layer2.opacity": 0,
+        "content_margin": [10, 5, 4, 5],
+        "max_margin_trim": 6,
+        "hit_test_level": 0.4
+    },
+    {
        // Sidebar row selected
         "class": "tree_row",
         "attributes": ["selected"],
         "layer0.opacity": 0.3, // Transparencia para el bg seleccionado
         "layer0.tint": [179, 120, 235], // Color del background
+    },
+    // Tabs (file color overrides)
+    {
+        "class": "tab_control", "attributes": ["file_light"],
+        "layer2.texture": "Theme - Default/light_unselected_tab_bg2.png",
+        "layer0.tint": [0, 221, 217],
+    },
+    // Tab close button hover
+    {
+        "class": "tab_close_button",
+        "settings": ["show_tab_close_buttons"],
+        "attributes": ["hover"],
+        "layer0.tint": [70, 109, 242],
+    },
+    // Standard vertical scroll bar
+    {
+        "class": "scroll_bar_control",
+        "layer0.texture": "",
+        "layer0.tint": [30, 29, 42],
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [0,0],
+        "blur": true
+    },
+    // Standard horizontal scroll bar
+    {
+        "class": "scroll_bar_control",
+        "attributes": ["horizontal"],
+        "layer0.texture": "",
+        "layer0.tint": [30, 29, 42],
+        "layer0.inner_margin": [0,0],
+        "blur": true
+    },
+    // Standard scroll bar corner
+    {
+        "class": "scroll_corner_control",
+        "layer0.texture": "",
+        "layer0.tint": [70, 109, 242],
+        "layer0.inner_margin": [0,0],
+        "layer0.opacity": 1
+    },
+    // Standard vertical scroll puck
+    {
+        "class": "puck_control",
+        "layer0.texture": "Theme - Solarized Space/resources/standard-puck-vertical-predawn.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [0, 6],
+        "content_margin": [5, 7],
+        "blur": false
+    },
+    // EMPTY WINDOW BACKGROUND
+    {
+        "class": "sheet_container_control",
+        "layer0.tint": [38, 41, 44],
+        "layer0.opacity": 1
+    },
+// CONTROLS
+//
+
+    {
+        "class": "grid_layout_control",
+        "border_size": 1,
+        "border_color": [70, 70, 70]
+    },
+        // Button labels
+    {
+        "class": "label_control",
+        "parents": [{"class": "button_control"}],
+        "font.bold": true,
+        "color": [201, 202, 203]
+    },
+    // STATUS BAR
+
+    // Status bar container
+    {
+        "class": "status_bar",
+        "layer0.texture": "",
+        "layer0.tint": [30, 29, 42],
+        "layer0.opacity": 1,
+        "content_margin": 4
+    },
+    // Status bar label
+    {
+        "class": "label_control",
+        "parents": [{"class": "status_bar"}],
+        "color": [255, 115, 195]
+    },
+    // Status bar switch panels button
+    {
+        "class": "panel_button_control",
+        "layer0.texture": "Theme - Solarized Space/resources/panels.png",
+        "layer0.opacity": 0.7,
+        "layer0.tint": [255, 255, 115],
+        "content_margin": [12, 8]
+    },
+    // Sidebar heading
+    {
+        "class": "sidebar_heading",
+        "color": [255, 155, 255],
+        "shadow_color": [105, 109, 118, 35],
+        "shadow_offset": [0, 0.1],
+        "font.bold": true,
+    },
+    // PANEL BACKGROUNDS
+        // Bottom panel background
+    {
+        "class": "panel_control",
+        "layer0.texture": "",
+        "layer0.inner_margin": [2, 2, 2, 2],
+        "layer0.opacity": 1.0,
+        "layer0.tint": [30, 29, 42],
+        "content_margin": [0, 0, -5, 0]
+    },
+      // Quick panel background
+    {
+        "class": "overlay_control",
+        "layer0.texture": "Theme - Solarized Space/resources/quick-panel-background-predawn.png",
+        "layer0.inner_margin": [12, 0, 12, 12],
+        "layer0.opacity": 1.0,
+        "layer1.opacity": 0,
+        "content_margin": [6, 0, 6, 8]
+    },
+    // Quick panel background
+    {
+        "class": "overlay_control",
+        //"layer0.texture": "Theme - Solarized Space/Predawn/overlay-bg-light.png",
+        "layer0.inner_margin": [30, 30],
+        "layer0.opacity": 0,
+        "layer1.texture": "Theme - Solarized Space/Predawn/quick-panel-background.png",
+        "layer1.inner_margin": [30, 0, 20, 20],
+        "layer1.opacity": 0,
+        "content_margin": [20, 6, 20, 26]
     },
 
     {
@@ -33,6 +183,19 @@
         "layer0.texture": "",
         "layer0.opacity": 1,
         "layer0.tint": [30, 29, 42],
+    },
+    // QUICK PANEL
+    {
+        "class": "quick_panel",
+        "row_padding": 4,
+        "layer0.tint": [0, 0, 0],
+        "layer0.opacity": 1,
+        "dark_content": true
+    },
+    {
+        "class": "quick_panel_row",
+        "attributes": ["selected"],
+        "layer0.tint": [241, 130, 94]
     },
     {
       // Sidebar folder entry
@@ -44,4 +207,35 @@
         "font.size": 13,
         "font.face": "Jetbrains Mono",
     },
+    // Sidebar file close hover
+    {
+        "class": "close_button",
+        "attributes": ["hover"],
+        "layer0.tint": [30, 29, 42]
+    },
+    // FOLDER AND FILE ICONS
+        // Hides Folder Icons if !hide_sidebar_icons
+    {
+        "class": "disclosure_button_control",
+        "settings": ["!hide_sidebar_icons"],
+        "content_margin": [0, 0],
+        "layer0.opacity": 0
+    },
+    // Replaces Default Folder Icons
+    {
+        "class": "icon_folder",
+        "settings": ["!hide_sidebar_icons"],
+        "content_margin": [7, 8],
+        "layer0.texture": "Theme - Solarized Space/resources/folder-icon.png",
+        "layer0.opacity": 1,
+        "layer0.tint": [10, 165, 250]
+    },
+    {
+        "class": "icon_folder",
+        "settings": ["!hide_sidebar_icons"],
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+        "layer0.texture": "Theme - Solarized Space/resources/folder_open-icon.png",
+        "layer0.opacity": 1.0
+    },
+
 ]
