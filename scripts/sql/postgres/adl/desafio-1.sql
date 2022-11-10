@@ -54,4 +54,4 @@ ORDER BY priority DESC limit 3;
 
 \C 'UNA EMPRESA O PRIORIDAD (2 RESULTADOS)'
 SELECT email, name, company FROM clients 
-WHERE priority=4 OR company='ibm';
+WHERE priority=4 OR company='tata';
