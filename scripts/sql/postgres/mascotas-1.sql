@@ -1,4 +1,4 @@
-DROP TABLE mascotas;
+DROP TABLE IF EXISTS mascotas;
 
 CREATE TABLE mascotas (
     id_mascota INT2,
