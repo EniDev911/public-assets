@@ -1,0 +1,10 @@
+[
+  { 
+  	"keys": ["alt+j"], 
+    "command": "toggle_terminus_panel"
+	},
+	{ "keys": ["ctrl+k", "ctrl+l"], "command": "toggle_setting", "args": {"setting": "line_numbers"}},
+	{ "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} },
+	{ "keys": ["ctrl+k", "ctrl+c"], "command": "toggle_comment", "args": { "block": false } },
+
+]
