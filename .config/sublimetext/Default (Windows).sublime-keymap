@@ -1,10 +1,7 @@
 [
-  { 
-  	"keys": ["alt+j"], 
-    "command": "toggle_terminus_panel"
-	},
-	{ "keys": ["ctrl+k", "ctrl+l"], "command": "toggle_setting", "args": {"setting": "line_numbers"}},
+	{ "keys": ["ctrl+shift+o"], "command": "prompt_open_folder" }, // open folder
+  { "keys": ["ctrl+alt+t"], "command": "toggle_terminus_panel" }, // toggle terminus
+	{ "keys": ["alt+l"], "command": "toggle_setting", "args": {"setting": "line_numbers"}} // toggle line numbers,
 	{ "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} },
-	{ "keys": ["ctrl+k", "ctrl+c"], "command": "toggle_comment", "args": { "block": false } },
-
+	{ "keys": ["alt+c"], "command": "toggle_comment", "args": { "block": false } }
 ]
