@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+from ${1:module} import ${2:object}
+]]></content>
+	<description>from _foo import _bar</description>
+	<tabTrigger>frim</tabTrigger>
+	<scope>source.python</scope>
+</snippet>
