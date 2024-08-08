@@ -37,4 +37,3 @@ erDiagram
     Inmueble }|--|| Comuna: "N - 1"
     Inmueble }|--|| Region: "N - 1"
 ```
-![image](https://github.com/user-attachments/assets/c61180c7-2d6b-4947-be61-fe1fefe7f783)
